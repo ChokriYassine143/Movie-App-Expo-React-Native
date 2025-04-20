@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "MovieNight",
+    "slug": "movie-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logo.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-8496800001431379~6878939971",
+    "ios_app_id": "ca-app-pub-yyyyyyyyyyyyyyy~xxxxxxxxxx"
+  },
+    "ios": {
+      "supportsTablet": true,
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-8496800001431379~6878939971"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/logo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-8496800001431379~6878939971"
+      },
+      "package": "com.anonymous.movieapp"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/logo.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
